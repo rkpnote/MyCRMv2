@@ -1,0 +1,19 @@
+<div *ngIf="!registerMode" class="container mt-5">
+    <div style="text-align: center;">
+        <h1>Power To Do More!</h1>
+        <p class="lead">Manage your customers and services with easy.</p>
+        <div class="text-center">
+            <button (click)="registerToggle()" class="btn btn-primary btn-lg mr-5">First Option</button>
+            <span>&nbsp;&nbsp;</span>
+            <button class="btn btn-info btn-lg ml-5">Second Option</button>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="registerMode" class="container">
+    <div class="row justify-content-center">
+        <div class="col-4">
+            <app-register (cancelRegister)="cancelRegisterMode($event)"></app-register>
+        </div>
+    </div>
+</div>
