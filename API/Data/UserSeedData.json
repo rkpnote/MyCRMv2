@@ -1,0 +1,92 @@
+[
+  {
+    "UserName": "Tara",
+    "Gender": "female",
+    "DateOfJoining": "2019-01-12",
+    "CreatedOn": "2020-06-19",
+    "LastActive": "2020-10-27",
+    "Mobile": "9891-223-997",
+    "Email": "tarabowman@motovate.com",
+    "Designation": "Sales Manger",
+    "City": "Madrid",
+    "Country": "Vanuatu",
+    "Photos": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/24.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "UserName": "Suzanne",
+    "Gender": "female",
+    "DateOfJoining": "2018-07-24",
+    "CreatedOn": "2019-07-25",
+    "LastActive": "2021-07-05",
+    "Mobile": "9891-223-997",
+    "Email": "suzannebowman@motovate.com",
+    "Designation": "Sales Manger",
+    "City": "Bath",
+    "Country": "Gabon",
+    "Photos": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/78.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "UserName": "Dena",
+    "Gender": "female",
+    "DateOfJoining": "2022-01-02",
+    "CreatedOn": "2019-04-05",
+    "LastActive": "2020-12-30",
+    "Mobile": "9891-223-997",
+    "Email": "denabowman@motovate.com",
+    "Designation": "Sales Manger",
+    "City": "Lavalette",
+    "Country": "Mauritania",
+    "Photos": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/4.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "UserName": "Veronica",
+    "Gender": "female",
+    "DateOfJoining": "2020-07-08",
+    "CreatedOn": "2019-08-13",
+    "LastActive": "2020-11-03",
+    "Mobile": "9891-223-997",
+    "Email": "veronicabowman@motovate.com",
+    "Designation": "Sales Manger",
+    "City": "Bentonville",
+    "Country": "Syria",
+    "Photos": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/59.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "UserName": "Kendra",
+    "Gender": "female",
+    "DateOfJoining": "2017-10-08",
+    "CreatedOn": "2019-01-08",
+    "LastActive": "2020-10-16",
+    "Mobile": "9891-223-997",
+    "Email": "kendrabowman@motovate.com",
+    "Designation": "Sales Manger",
+    "City": "Villarreal",
+    "Country": "American Samoa",
+    "Photos": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/82.jpg",
+        "IsMain": true
+      }
+    ]
+  }
+]
