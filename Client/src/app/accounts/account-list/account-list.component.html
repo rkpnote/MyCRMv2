@@ -1,1 +1,5 @@
-<p>account-list works!</p>
+<div class="row">
+    <div *ngFor="let user of appUsers" class="col-2">
+        <app-account-card [appuser]="user"></app-account-card>
+    </div>
+</div>
