@@ -20,4 +20,8 @@ export class AppusersService {
   getUser(username: string){
     return this.http.get<appUser>(this.baseUrl + 'users/' + username);
   }
+
+  updateAppUser(appUser: appUser) {
+    return this.http.put(this.baseUrl + 'users', appUser);
+  }
 }

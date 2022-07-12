@@ -1,0 +1,75 @@
+<div class="row" *ngIf="appuser">
+    <div class="col-4">
+        <h1>Your Profile</h1>
+    </div>
+    <div class="col-8">
+        <div class="alert alert-info" >
+            <strong>Information: </strong>You have made changes, any unsaved changes will be lost!
+        </div>
+    </div>
+    <div class="row">
+        
+    </div>
+    <div class="row" *ngIf="appuser">
+        <div class="col-4">
+            <div class="card">
+                <img src="{{appuser.photoUrl || './assets/user.png'}}" alt="{{appuser.username}}" 
+                class="card-img-top img-thumbnail">
+                <div class="card-body text-center">
+                    <h3>{{appuser.username | titlecase}}</h3>
+                    </div>
+                <div class="card-body">
+                    <strong>Location:</strong>
+                    <p>{{appuser.city}}, {{appuser.country}}</p>
+                </div>
+                <div class="card-body">
+                    <strong>Years Working With us:</strong>
+                    <p>{{appuser.age}}</p>
+                </div>
+                <div class="card-body">
+                    <strong>Employee Since:</strong>
+                    <p>{{appuser.createdOn}}</p>
+                </div>
+                <div class="card-body">
+                    <strong>City:</strong>
+                    <p>{{appuser.city}}</p>
+                </div>
+                <div class="card-body">
+                    <strong>Last Active:</strong>
+                    <p>{{appuser.lastActive}}</p>
+                </div>
+                <div class="card-footer">
+                    <button form="editForm" [disabled]="!editForm.dirty" type="submit" class="btn btn-success btn-block">Save Changes</button>
+                </div>          
+            </div>        
+        </div>
+        <div class="col-8">
+            <tabset class="account-tabset">
+                <tab heading="About {{appuser.username | titlecase}}">
+                    <form id="editForm" #editForm="ngForm" (ngSubmit)="updateUser()">
+                        <h4>Details</h4>
+                        <h4 class="mt-2">Current Profile:</h4>
+                        <textarea class="form-control" name="profile"rows="4"></textarea>
+                        <div class="form-inline mt-2">
+                            <label for="designation">Designation: </label>
+                            <input [(ngModel)]="appuser.designation" type="text" name="designation" class="form-control mx-2">
+                            <label for="city">City: </label>
+                            <input [(ngModel)]="appuser.city" type="text" name="city" class="form-control mx-2">
+                            <label for="mobile">Mobile: </label>
+                            <input [(ngModel)]="appuser.mobile" type="text" name="mobile" class="form-control mx-2">
+                            <label for="email">Email: </label>
+                            <input [(ngModel)]="appuser.email" type="text" name="email" class="form-control mx-2">
+                            <label for="gender">Gender </label>
+                            <input [(ngModel)]="appuser.gender" type="text" name="gender" class="form-control mx-2">
+                            <label for="country">Country: </label>
+                            <input [(ngModel)]="appuser.country" type="text" name="country" class="form-control mx-2">
+                        </div>
+                    </form>
+                </tab>
+                <tab heading="Edit Photos">
+                    <h4>Photo edit will go here</h4>
+                </tab>                
+            </tabset>
+        </div>
+    </div>
+</div>
